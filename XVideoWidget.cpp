@@ -112,7 +112,7 @@ void XVideoWidget::initializeGL() {
 	datas[1] = new unsigned char[width * height/4];
 	datas[2] = new unsigned char[width * height/4];
 
-	fp = fopen("G:/123/out240x128.yuv","rb");
+	fp = fopen("out240x128.yuv","rb");
 
 	QTimer* t1 = new QTimer(this);
 	connect(t1,SIGNAL(timeout()),this,SLOT(update()));
