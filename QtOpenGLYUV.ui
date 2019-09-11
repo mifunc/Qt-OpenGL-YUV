@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtOpenGLYUVClass</class>
+ <widget class="QWidget" name="QtOpenGLYUVClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtOpenGLYUV</string>
+  </property>
+  <widget class="XVideoWidget" name="openGLWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>XVideoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>XVideoWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QtOpenGLYUV.qrc"/>
+ </resources>
+ <connections/>
+</ui>
